@@ -84,6 +84,7 @@ export function maxLength(max) {
       : Failure(ValidationError(translate("Validations.Generic.MaxCharacters", { max })));
   });
 }
+//test
 
 export const isInteger = Validator(function isInteger(value) {
   return Number.isInteger(value) ? Success : Failure(ValidationError(translate("Validations.Generic.Integer")));
